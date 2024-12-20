@@ -218,6 +218,28 @@ N.
 */
 
 
+    int N;
+    printf("Enter the amount in Rs.: ");
+    scanf("%d", &N);
+
+    int denominations[] = {100, 50, 10, 5, 2, 1};
+    int num_notes[6] = {0}; // Initialize an array to store the count of each denomination
+
+    for (int i = 0; i < 6; i++) {
+        while (N >= denominations[i]) { // say 1500 >= 100 (for i = 0)
+            N -= denominations[i]; // 1500 - 100 
+            num_notes[i]++;  // rs 100  notes count goes up by 1
+        }
+    }
+
+    printf("Minimum number of notes:\n");
+    for (int i = 0; i < 6; i++) {
+        if (num_notes[i] > 0) {
+            printf("%d x Rs. %d\n", num_notes[i], denominations[i]);
+        }
+    }
+
+
 
 
 }
