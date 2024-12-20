@@ -128,8 +128,8 @@ paper_size[0][1] = 841;  // A0 dimensions
 
 for(int i = 0; i<9;i++)
 {
-    paper_size[i+1][0] = paper_size[i][1];
-    paper_size[i+1][1] = paper_size[i][0]/2;
+    paper_size[i+1][0] = paper_size[i][1]; // copy the shorter dimension to the next size
+    paper_size[i+1][1] = paper_size[i][0]/2; // copy the longer dimension and halve it
 }
 
 for(int i = 0; i<9;i++){
