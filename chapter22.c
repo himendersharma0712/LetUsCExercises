@@ -12,6 +12,7 @@
 // int main(){
 //   ptrFunc = sum;
 //   printf("%d\n",ptrFunc(1,2));
+//   printf("%u",sum); // prints the address of sum
 // }
 
 /**********************************************************/
